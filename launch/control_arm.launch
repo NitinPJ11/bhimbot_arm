@@ -1,0 +1,9 @@
+<launch>
+
+  <include file="$(find bhimbot_arm)/launch/bhimbot_description.launch" />
+  <include file="$(find bhimbot_arm)/launch/bhimbot_rviz.launch" />
+  <include file="$(find bhimbot_arm)/launch/bhimbot_gazebo.launch" />
+  <include file="$(find bhimbot_arm)/launch/bhimbot_control.launch" />
+
+</launch>
+

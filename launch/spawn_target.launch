@@ -1,0 +1,9 @@
+<launch>
+
+  <param name="target_description" command="$(find xacro)/xacro.py --inorder $(find bhimbot_arm)/urdf/target_object.xacro" />
+ 
+  <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+        args="-urdf -x -0.03 -y -0.5 -model target_object -param target_description"  />
+ 
+</launch>
+

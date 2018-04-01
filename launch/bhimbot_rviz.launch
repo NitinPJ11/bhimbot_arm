@@ -1,0 +1,4 @@
+<launch>
+  <!-- To load in RViz -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find bhimbot_arm)/config/bhimbot_arm.rviz" required="true" />
+</launch>

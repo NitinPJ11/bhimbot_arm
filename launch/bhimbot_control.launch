@@ -1,0 +1,10 @@
+<launch>
+ 
+  <rosparam file="$(find bhimbot_arm)/config/bhimbot_control.yaml" command="load" />
+
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+        output="screen" ns="/bhimbot" args="shoulder_pan_joint_position_controller shoulder_pitch_joint_position_controller 
+                                            elbow_pitch_joint_position_controller wrist_pitch_joint_position_controller 
+                                            wrist_roll_joint_position_controller gripper_left_finger_joint_position_controller" />
+
+</launch>
